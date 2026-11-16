@@ -34,6 +34,18 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 # palabras que no distinguen un canal de otro
 ALIAS = {('chv',): ('chilevision',)}
 
+# marcas de cable internacionales: el feed es el mismo en toda Latinoamerica,
+# asi que da igual de que pais venga la guia y conviene la que trae sinopsis
+MARCAS = {
+    "hbo", "espn", "discovery", "tnt", "cinemax", "star", "axn", "fx", "universal",
+    "sony", "warner", "history", "nat", "geo", "cartoon", "disney", "nick", "mtv",
+    "comedy", "film", "golden", "space", "tcm", "cinecanal", "amc", "tlc", "id",
+    "lifetime", "food", "hgtv", "home", "animal", "science", "turbo", "theater",
+    "world", "kids", "baby", "tooncast", "pasiones", "tlnovelas", "sextreme",
+    "venus", "playboy", "dhe", "elgourmet", "gourmet", "studio", "paramount",
+    "syfy", "usa", "tbs", "golf", "fox", "premium", "entertainment", "health",
+}
+
 STOP = {
     "canal", "de", "del", "la", "el", "los", "las", "y", "en", "tv", "hd", "sd",
     "chile", "latinoamerica", "latam", "internacional", "senal", "hd2", "television",
@@ -69,10 +81,12 @@ def tokens(text: str) -> frozenset:
     t = t.replace("+", " plus ")
     t = re.sub(r"\[[^\]]*\]", " ", t)
     t = re.sub(r"\([^)]*\)", " ", t)
+    t = re.sub(r"\b(\d+)\s*(hd|sd|fhd|uhd|hd2)\b", r"\1", t)   # "ESPN 4HD" -> "ESPN 4"
     t = re.sub(r"[^a-z0-9]+", " ", t)
     words = [w for w in t.split() if w and w not in STOP]
-    # el proveedor mete marcadores sueltos de una letra: "H TV PERU", "13 C"
-    words = [w for w in words if len(w) > 1]
+    # el proveedor mete marcadores sueltos de una letra: "H TV PERU", "13 C".
+    # los digitos NO se tocan: "ESPN 3" y "ESPN 2" son canales distintos
+    words = [w for w in words if len(w) > 1 or w.isdigit()]
     base = frozenset(words)
     return frozenset(ALIAS.get(tuple(sorted(base)), sorted(base)))
 
@@ -91,8 +105,17 @@ class Guide:
         # un canal sin horarios (PE1 lo hace con 136 de 164) y si lo dejamos
         # indexado le gana el turno a otra guia que si tiene datos
         con_datos = set()
+        total = {}
+        con_desc = {}
         for pr in self.root.findall("programme"):
-            con_datos.add(pr.get("channel"))
+            cid = pr.get("channel")
+            con_datos.add(cid)
+            total[cid] = total.get(cid, 0) + 1
+            d = pr.findtext("desc")
+            if d and d.strip():
+                con_desc[cid] = con_desc.get(cid, 0) + 1
+        # proporcion de programas con sinopsis, para desempatar entre guias
+        self.desc = {c: con_desc.get(c, 0) / t for c, t in total.items() if t}
         for ch in self.root.findall("channel"):
             cid = ch.get("id") or ""
             if cid not in con_datos:
@@ -137,10 +160,20 @@ def resolve(name, guides):
                     return cid, g, "exacto-completo", 1.0
         return None
 
-    # 1. mismas palabras exactas
+    # 1. mismas palabras exactas. Si el canal es una marca internacional
+    #    (HBO, ESPN, Discovery...) el feed es el mismo en toda la region, asi
+    #    que se prefiere la guia que trae sinopsis. Para canales nacionales
+    #    manda el orden de las guias: "Mega" de Chile no es "Mega" de Espana.
+    exactos = []
     for g in guides:
         if tk in g.by_tokens:
-            return g.by_tokens[tk], g, "exacto", 1.0
+            cid = g.by_tokens[tk]
+            exactos.append((g.desc.get(cid, 0.0), cid, g))
+    if exactos:
+        if tk & MARCAS:
+            exactos.sort(key=lambda x: -x[0])
+        _, cid, g = exactos[0]
+        return cid, g, "exacto", 1.0
 
     # 2. alta similitud de palabras (Jaccard)
     best = None

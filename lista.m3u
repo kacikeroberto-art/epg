@@ -7,19 +7,19 @@ http://190.108.83.69:8000/play/a0c9/index.m3u8
 http://190.108.83.69:8000/play/a0bl/index.m3u8
 #EXTINF:-1 group-title="-",A&E HD
 http://190.108.83.69:8000/play/a02y/index.m3u8
-#EXTINF:-1 tvg-id="Canal.AMC.(Chile).cl" group-title="-",AMC HD
+#EXTINF:-1 tvg-id="AMC.es" group-title="-",AMC HD
 http://190.108.83.69:8000/play/a033/index.m3u8
 #EXTINF:-1 tvg-id="Canal.AMC.Series.(México).mx" group-title="-",AMC SERIES
 http://190.108.83.69:8000/play/a00p/index.m3u8
 #EXTINF:-1 tvg-id="ATV.HD.(ATV.HD).pe" group-title="-",ATV
 http://190.108.83.69:8000/play/a019/index.m3u8
-#EXTINF:-1 tvg-id="Canal.AXN.(Chile).cl" group-title="-",AXN HD
+#EXTINF:-1 tvg-id="AXN.co" group-title="-",AXN HD
 http://190.108.83.69:8000/play/a04c/index.m3u8
 #EXTINF:-1 tvg-id="[ADSLA].Adult.Swim.uy" group-title="-",Adult Swim
 http://190.108.83.69:8000/play/a02k/index.m3u8
 #EXTINF:-1 tvg-id="Canal.America.TV.(Argentina).ar" group-title="-",America TV HD
 http://190.108.83.69:8000/play/a00f/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Animal.Planet.(Chile).cl" group-title="-",Animal Planet HD
+#EXTINF:-1 tvg-id="Animal.Planet.co" group-title="-",Animal Planet HD
 http://190.108.83.69:8000/play/a043/index.m3u8
 #EXTINF:-1 tvg-id="Canal.Antena.3.mx" group-title="-",Antena 3
 http://190.108.83.69:8000/play/a01e/index.m3u8
@@ -27,7 +27,7 @@ http://190.108.83.69:8000/play/a01e/index.m3u8
 http://190.108.83.69:8000/play/a0al/index.m3u8
 #EXTINF:-1 group-title="-",BETHEL TV
 http://190.108.83.69:8000/play/a040/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Baby.TV.(Latinoamérica).cl" group-title="-",Baby TV
+#EXTINF:-1 tvg-id="I104.56036.schedulesdirect.org" group-title="-",Baby TV
 http://190.108.83.69:8000/play/a022/index.m3u8
 #EXTINF:-1 group-title="-",CCTV-CGTN
 http://190.108.83.69:8000/play/a07h/index.m3u8
@@ -39,53 +39,53 @@ http://190.108.83.69:8000/play/a023/index.m3u8
 http://190.108.83.69:8000/play/a02v/index.m3u8
 #EXTINF:-1 group-title="-",Canal N
 http://190.108.83.69:8000/play/a07r/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Cartoon.Network.(Chile).cl" group-title="-",Cartoon Network HD
+#EXTINF:-1 tvg-id="Cartoon.Network.co" group-title="-",Cartoon Network HD
 http://190.108.83.69:8000/play/a08g/index.m3u8
 #EXTINF:-1 tvg-id="Canal.Cartoonito.(Chile).cl" group-title="-",Cartoonito
 http://190.108.83.69:8000/play/a0aa/index.m3u8
-#EXTINF:-1 tvg-id="CINECANAL.HD.(Cinecanal.HD).pe" group-title="-",Cinecanal HD
+#EXTINF:-1 tvg-id="CINECANAL.HD.uy" group-title="-",Cinecanal HD
 http://190.108.83.69:8000/play/a048/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Cinemax.(Chile).cl" group-title="-",Cinemax
+#EXTINF:-1 tvg-id="CINEMAX.HD.uy" group-title="-",Cinemax
 http://190.108.83.69:8000/play/a06s/index.m3u8
 #EXTINF:-1 tvg-id="COMEDY.CENTRAL.HD.(ComedyCentralHD).pe" group-title="-",Comedy Central HD
 http://190.108.83.69:8000/play/a02z/index.m3u8
-#EXTINF:-1 tvg-id="Canal.DHE.cl" group-title="-",DHE HD
+#EXTINF:-1 tvg-id="DHE.HD.co" group-title="-",DHE HD
 http://190.108.83.69:8000/play/a03v/index.m3u8
 #EXTINF:-1 tvg-id="DW.ESPAÑOL.HD.uy" group-title="-",DW Espanol
 http://190.108.83.69:8000/play/a01l/index.m3u8
 #EXTINF:-1 group-title="-",De PelŦcula
 http://190.108.83.69:8000/play/a06o/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.Channel.(Chile).cl" group-title="-",Discovery Channel  HD
+#EXTINF:-1 tvg-id="I212.96307.schedulesdirect.org" group-title="-",Discovery Channel  HD
 http://190.108.83.69:8000/play/a044/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.Kids.(Chile).cl" group-title="-",Discovery Kids HD
+#EXTINF:-1 tvg-id="I221.45955.schedulesdirect.org" group-title="-",Discovery Kids HD
 http://190.108.83.69:8000/play/a0bn/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.Science.(Latinoamérica).cl" group-title="-",Discovery Science
+#EXTINF:-1 tvg-id="DISCOVERY.SCIENCE.HD.uy" group-title="-",Discovery Science
 http://190.108.83.69:8000/play/a02b/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.Theater.(Latinoamérica).cl" group-title="-",Discovery Theater HD
+#EXTINF:-1 tvg-id="DISCOVERY.HD.THEATER.co" group-title="-",Discovery Theater HD
 http://190.108.83.69:8000/play/a03e/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.Turbo.(Latinoamérica).cl" group-title="-",Discovery Turbo
+#EXTINF:-1 tvg-id="Discovery.Turbo.co" group-title="-",Discovery Turbo
 http://190.108.83.69:8000/play/a026/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Discovery.World.Latinoamérica.cl" group-title="-",Discovery World HD
+#EXTINF:-1 tvg-id="DISCOVERY.WORLD.HD.uy" group-title="-",Discovery World HD
 http://190.108.83.69:8000/play/a036/index.m3u8
 #EXTINF:-1 tvg-id="DISNEY.uy" group-title="-",Disney HD
 http://190.108.83.69:8000/play/a04f/index.m3u8
-#EXTINF:-1 tvg-id="DISNEY.JUNIOR.(DisneyJunior).pe" group-title="-",Disney Junior
+#EXTINF:-1 tvg-id="I231.61311.schedulesdirect.org" group-title="-",Disney Junior
 http://190.108.83.69:8000/play/a025/index.m3u8
-#EXTINF:-1 tvg-id="Canal.E!.Entertainment.Television.(Chile).cl" group-title="-",E! Entertainment TV
+#EXTINF:-1 tvg-id="E!.Entertainment.TV.co" group-title="-",E! Entertainment TV
 http://190.108.83.69:8000/play/a02c/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.2.(ESPN2.Peru).pe" group-title="-",ESPN 2 HD
 http://190.108.83.69:8000/play/a0an/index.m3u8
-#EXTINF:-1 tvg-id="ESPN.2.(ESPN2.Peru).pe" group-title="-",ESPN 3 HD
+#EXTINF:-1 tvg-id="ESPN.3.HD.(ESPN.3.HD).pe" group-title="-",ESPN 3 HD
 http://190.108.83.69:8000/play/a039/index.m3u8
-#EXTINF:-1 group-title="-",ESPN 4HD
+#EXTINF:-1 tvg-id="ESPN.4.HD.uy" group-title="-",ESPN 4HD
 http://190.108.83.69:8000/play/a04h/index.m3u8
-#EXTINF:-1 group-title="-",ESPN 5HD
+#EXTINF:-1 tvg-id="ESPN.5.co" group-title="-",ESPN 5HD
 http://190.108.83.69:8000/play/a032/index.m3u8
-#EXTINF:-1 group-title="-",ESPN 6HD
+#EXTINF:-1 tvg-id="ESPN.6.HD.co" group-title="-",ESPN 6HD
 http://190.108.83.69:8000/play/a02w/index.m3u8
-#EXTINF:-1 group-title="-",ESPN 7HD
+#EXTINF:-1 tvg-id="ESPN.7.HD.co" group-title="-",ESPN 7HD
 http://190.108.83.69:8000/play/a049/index.m3u8
-#EXTINF:-1 tvg-id="ESPN.2.(ESPN2.Peru).pe" group-title="-",ESPN HD
+#EXTINF:-1 tvg-id="ESPN.HD.(ESPN.HD).pe" group-title="-",ESPN HD
 http://190.108.83.69:8000/play/a03s/index.m3u8
 #EXTINF:-1 tvg-id="I346.123582.schedulesdirect.org" group-title="-",ESPN Premium HD
 http://190.108.83.69:8000/play/a03w/index.m3u8
@@ -99,9 +99,9 @@ http://190.108.83.69:8000/play/a01d/index.m3u8
 http://190.108.83.69:8000/play/a02j/index.m3u8
 #EXTINF:-1 group-title="-",Exitosa TV
 http://190.108.83.69:8000/play/a07s/index.m3u8
-#EXTINF:-1 tvg-id="FX.HD.(FX.HD).pe" group-title="-",FX HD
+#EXTINF:-1 tvg-id="FX.uy" group-title="-",FX HD
 http://190.108.83.69:8000/play/a04i/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Film.&.Arts.ar" group-title="-",Film&Arts
+#EXTINF:-1 tvg-id="I322.106731.schedulesdirect.org" group-title="-",Film&Arts
 http://190.108.83.69:8000/play/a00n/index.m3u8
 #EXTINF:-1 tvg-id="Food.Network.co" group-title="-",Food Network
 http://190.108.83.69:8000/play/a08e/index.m3u8
@@ -113,9 +113,9 @@ http://190.108.83.69:8000/play/a0cb/index.m3u8
 http://190.108.83.69:8000/play/a0cd/index.m3u8
 #EXTINF:-1 group-title="-",GLOBAL
 http://190.108.83.69:8000/play/a01b/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Golden.Edge.cl" group-title="-",Golden Edge
+#EXTINF:-1 tvg-id="GOLDEN.EDGE.HD.uy" group-title="-",Golden Edge
 http://190.108.83.69:8000/play/a00w/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Golden.(Argentina).ar" group-title="-",Golden HD
+#EXTINF:-1 tvg-id="GOLDEN.HD.uy" group-title="-",Golden HD
 http://190.108.83.69:8000/play/a00i/index.m3u8
 #EXTINF:-1 tvg-id="Canal.America.TV.(Argentina).ar" group-title="-",H AMERICA TV
 http://190.108.83.69:8000/play/a097/index.m3u8
@@ -129,23 +129,23 @@ http://190.108.83.69:8000/play/a0cr/index.m3u8
 http://190.108.83.69:8000/play/a09a/index.m3u8
 #EXTINF:-1 group-title="-",H TV PERU
 http://190.108.83.69:8000/play/a092/index.m3u8
-#EXTINF:-1 tvg-id="El.Gourmet.co" group-title="-",H- GOURMET HD
+#EXTINF:-1 tvg-id="EL.GOURMET.HD.uy" group-title="-",H- GOURMET HD
 http://190.108.83.69:8000/play/a0d2/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.(Chile).cl" group-title="-",HBO 2
+#EXTINF:-1 tvg-id="HBO.2.co" group-title="-",HBO 2
 http://190.108.83.69:8000/play/a0cx/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Family.Latinoamérica.cl" group-title="-",HBO Family HD
+#EXTINF:-1 tvg-id="HBO.Family.co" group-title="-",HBO Family HD
 http://190.108.83.69:8000/play/a03x/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.(Chile).cl" group-title="-",HBO HD
+#EXTINF:-1 tvg-id="HBO.HD.uy" group-title="-",HBO HD
 http://190.108.83.69:8000/play/a035/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Mundi.cl" group-title="-",HBO MUNDI
+#EXTINF:-1 tvg-id="HBO.MUNDI.HD.uy" group-title="-",HBO MUNDI
 http://190.108.83.69:8000/play/a01h/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Pop.cl" group-title="-",HBO POP HD
+#EXTINF:-1 tvg-id="HBO.POP.HD.uy" group-title="-",HBO POP HD
 http://190.108.83.69:8000/play/a03k/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Plus.cl" group-title="-",HBO Plus
+#EXTINF:-1 tvg-id="HBO.PLUS.HD.uy" group-title="-",HBO Plus
 http://190.108.83.69:8000/play/a06b/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Signature.Latinoamérica.cl" group-title="-",HBO Signature
+#EXTINF:-1 tvg-id="HBO.SIGNATURE.HD.uy" group-title="-",HBO Signature
 http://190.108.83.69:8000/play/a01g/index.m3u8
-#EXTINF:-1 tvg-id="Canal.HBO.Xtreme.cl" group-title="-",HBO XTREME HD
+#EXTINF:-1 tvg-id="HBO.XTREME.co" group-title="-",HBO XTREME HD
 http://190.108.83.69:8000/play/a03y/index.m3u8
 #EXTINF:-1 group-title="-",HEI HD
 http://190.108.83.69:8000/play/a072/index.m3u8
@@ -155,7 +155,7 @@ http://190.108.83.69:8000/play/a02f/index.m3u8
 http://190.108.83.69:8000/play/a073/index.m3u8
 #EXTINF:-1 tvg-id="Canal.HTV.cl" group-title="-",HTV
 http://190.108.83.69:8000/play/a00q/index.m3u8
-#EXTINF:-1 tvg-id="Canal.History.(Chile).cl" group-title="-",History 2
+#EXTINF:-1 tvg-id="History.2.co" group-title="-",History 2
 http://190.108.83.69:8000/play/a00j/index.m3u8
 #EXTINF:-1 tvg-id="History.Channel.co" group-title="-",History Channel HD
 http://190.108.83.69:8000/play/a045/index.m3u8
@@ -173,7 +173,7 @@ http://190.108.83.69:8000/play/a083/index.m3u8
 http://190.108.83.69:8000/play/a09l/index.m3u8
 #EXTINF:-1 tvg-id="LATINA.HD.(Latina.HD).pe" group-title="-",Latina HD
 http://190.108.83.69:8000/play/a00g/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Lifetime.(Chile).cl" group-title="-",Lifetime
+#EXTINF:-1 tvg-id="[LIFELC].Lifetime.uy" group-title="-",Lifetime
 http://190.108.83.69:8000/play/a02i/index.m3u8
 #EXTINF:-1 tvg-id="Love.Nature.co" group-title="-",Love Nature
 http://190.108.83.69:8000/play/a085/index.m3u8
@@ -195,9 +195,9 @@ http://190.108.83.69:8000/play/a00k/index.m3u8
 http://190.108.83.69:8000/play/a017/index.m3u8
 #EXTINF:-1 tvg-id="PANAMERICANA.TELEVISION.HD.(Panamericana.HD).pe" group-title="-",Panamericana
 http://190.108.83.69:8000/play/a018/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Pasiones.(Latinoamérica).cl" group-title="-",Pasiones HD
+#EXTINF:-1 tvg-id="PASIONES.co" group-title="-",Pasiones HD
 http://190.108.83.69:8000/play/a03h/index.m3u8
-#EXTINF:-1 tvg-id="Playboy.TV.es" group-title="-",Playboy HD
+#EXTINF:-1 tvg-id="I542.54335.schedulesdirect.org" group-title="-",Playboy HD
 http://190.108.83.69:8000/play/a02p/index.m3u8
 #EXTINF:-1 tvg-id="PLIM.PLIM.uy" group-title="-",Plim Plim TV
 http://190.108.83.69:8000/play/a07n/index.m3u8
@@ -225,17 +225,17 @@ http://190.108.83.69:8000/play/a041/index.m3u8
 http://190.108.83.69:8000/play/a01a/index.m3u8
 #EXTINF:-1 group-title="-",SONY CHANNEL HD
 http://190.108.83.69:8000/play/a04a/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Star.Channel.(Chile).cl" group-title="-",STAR CHANNEL HD
+#EXTINF:-1 tvg-id="STAR.CHANNEL.HD.uy" group-title="-",STAR CHANNEL HD
 http://190.108.83.69:8000/play/a04j/index.m3u8
 #EXTINF:-1 tvg-id="I567.72143.schedulesdirect.org" group-title="-",Sextreme
 http://190.108.83.69:8000/play/a0cj/index.m3u8
 #EXTINF:-1 tvg-id="I1000.123692.schedulesdirect.org" group-title="-",Sony Movies
 http://190.108.83.69:8000/play/a08j/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Space.(Chile).cl" group-title="-",Space HD
+#EXTINF:-1 tvg-id="SPACE.HD.uy" group-title="-",Space HD
 http://190.108.83.69:8000/play/a04e/index.m3u8
 #EXTINF:-1 group-title="-",Stingray Concerts HD
 http://190.108.83.69:8000/play/a00d/index.m3u8
-#EXTINF:-1 tvg-id="STUDIO.UNIVERSAL.(Studio.Universal).pe" group-title="-",Studio Universal HD
+#EXTINF:-1 tvg-id="STUDIO.UNIVERSAL.HD.uy" group-title="-",Studio Universal HD
 http://190.108.83.69:8000/play/a074/index.m3u8
 #EXTINF:-1 tvg-id="Canal.Sun.Channel.cl" group-title="-",Sun Channel HD
 http://190.108.83.69:8000/play/a03z/index.m3u8
@@ -243,15 +243,15 @@ http://190.108.83.69:8000/play/a03z/index.m3u8
 http://190.108.83.69:8000/play/a07y/index.m3u8
 #EXTINF:-1 group-title="-",T PBO HD
 http://190.108.83.69:8000/play/a05r/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TCM.(Chile).cl" group-title="-",TCM
+#EXTINF:-1 tvg-id="TCM.uy" group-title="-",TCM
 http://190.108.83.69:8000/play/a00y/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TLC.(Chile).cl" group-title="-",TLC
+#EXTINF:-1 tvg-id="TLC.co" group-title="-",TLC
 http://190.108.83.69:8000/play/a02a/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TNT.(Chile).cl" group-title="-",TNT HD
+#EXTINF:-1 tvg-id="TNT.HD.uy" group-title="-",TNT HD
 http://190.108.83.69:8000/play/a047/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TNT.Novelas.(Chile).cl" group-title="-",TNT Novelas HD
+#EXTINF:-1 tvg-id="TNT.Novelas.co" group-title="-",TNT Novelas HD
 http://190.108.83.69:8000/play/a038/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TNT.Series.(México).mx" group-title="-",TNT Series HD
+#EXTINF:-1 tvg-id="TNT.Series.co" group-title="-",TNT Series HD
 http://190.108.83.69:8000/play/a034/index.m3u8
 #EXTINF:-1 group-title="-",TNT Sports Premiun HD
 http://190.108.83.69:8000/play/a03i/index.m3u8
@@ -263,21 +263,21 @@ http://190.108.83.69:8000/play/a03f/index.m3u8
 http://190.108.83.69:8000/play/a08l/index.m3u8
 #EXTINF:-1 tvg-id="Canal.Telemundo.(Chile).cl" group-title="-",Telemundo
 http://190.108.83.69:8000/play/a02d/index.m3u8
-#EXTINF:-1 tvg-id="Canal.TLNovelas.(Chile).cl" group-title="-",Tlnovelas
+#EXTINF:-1 tvg-id="TLNOVELAS.HD.uy" group-title="-",Tlnovelas
 http://190.108.83.69:8000/play/a06n/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Tooncast.cl" group-title="-",Tooncast
+#EXTINF:-1 tvg-id="TOONCAST.HD.uy" group-title="-",Tooncast
 http://190.108.83.69:8000/play/a02e/index.m3u8
 #EXTINF:-1 group-title="-",UNIVERSAL CHANNEL HD
 http://190.108.83.69:8000/play/a031/index.m3u8
 #EXTINF:-1 tvg-id="I756.56727.schedulesdirect.org" group-title="-",USA
 http://190.108.83.69:8000/play/a00v/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Universal.Cinema.mx" group-title="-",Universal Cinema SD
+#EXTINF:-1 tvg-id="UNIVERSAL.CINEMA.HD.uy" group-title="-",Universal Cinema SD
 http://190.108.83.69:8000/play/a0cz/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Universal.Comedy.mx" group-title="-",Universal Comedy SD
+#EXTINF:-1 tvg-id="UNIVERSAL.COMEDY.HD.uy" group-title="-",Universal Comedy SD
 http://190.108.83.69:8000/play/a0d0/index.m3u8
-#EXTINF:-1 tvg-id="Canal.Universal.Premiere.mx" group-title="-",Universal Premiere SD
+#EXTINF:-1 tvg-id="UNIVERSAL.PREMIERE.HD.uy" group-title="-",Universal Premiere SD
 http://190.108.83.69:8000/play/a0cy/index.m3u8
-#EXTINF:-1 tvg-id="[VNUS].Venus.uy" group-title="-",Venus
+#EXTINF:-1 tvg-id="I759.16498.schedulesdirect.org" group-title="-",Venus
 http://190.108.83.69:8000/play/a013/index.m3u8
 #EXTINF:-1 group-title="-",Via X Esports
 http://190.108.83.69:8000/play/a00u/index.m3u8
