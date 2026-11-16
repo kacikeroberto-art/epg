@@ -2,7 +2,7 @@ name: Actualizar EPG
 
 on:
   schedule:
-    - cron: "0 6 * * 1"      # lunes 06:00 UTC (03:00 en Chile)
+    - cron: "0 6 * * *"      # todos los días 06:00 UTC (03:00 en Chile)
   workflow_dispatch:          # tambien a mano desde la pestaña Actions
 
 permissions:
