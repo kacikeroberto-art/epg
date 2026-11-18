@@ -13,6 +13,7 @@ import re
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -45,19 +46,37 @@ def used_ids(m3u: Path) -> set:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--m3u", required=True)
+    ap.add_argument("--m3u", help="lista con los tvg-id")
+    ap.add_argument("--ids-file", help="archivo de texto con un id por linea "
+                                      "(permite generar el EPG sin subir la lista)")
     ap.add_argument("--epg", required=True)
     ap.add_argument("--out", default="epg-cliente.xml")
+    ap.add_argument("--days", type=int, default=0, help="solo N dias (0 = todo)")
     ap.add_argument("--keep-all", action="store_true", help="no filtrar por la lista")
     args = ap.parse_args()
 
-    ids = set() if args.keep_all else used_ids(Path(args.m3u))
-    print(f"Canales pedidos por la lista: {len(ids)}")
+    if args.keep_all:
+        ids = set()
+    elif args.ids_file:
+        ids = {l.strip() for l in Path(args.ids_file).read_text(encoding="utf-8").splitlines()
+               if l.strip() and not l.startswith("#")}
+    elif args.m3u:
+        ids = used_ids(Path(args.m3u))
+    else:
+        raise SystemExit("Falta --m3u o --ids-file")
+    print(f"Canales pedidos: {len(ids)}")
 
     out = ET.Element("tv", {"generator-info-name": "epg-merge"})
     found = set()
     programas = 0
     con_datos = set()
+
+    # limite de dias: una guia de 11 MB hace que algunos reproductores carguen
+    # solo una parte. Con --days 3 el archivo baja casi a la mitad
+    limite = ""
+    if args.days:
+        limite = (datetime.now(timezone.utc)
+                  + timedelta(days=args.days)).strftime("%Y%m%d%H%M%S")
 
     for url in [u.strip() for u in args.epg.split(",") if u.strip()]:
         print(f"Guia: {url.split('epg_ripper_')[-1]}")
@@ -68,10 +87,13 @@ def main():
                 out.append(ch)
                 found.add(cid)
         for pr in root.findall("programme"):
-            if pr.get("channel") in ids:
-                out.append(pr)
-                programas += 1
-                con_datos.add(pr.get("channel"))
+            if pr.get("channel") not in ids:
+                continue
+            if limite and (pr.get("start") or "")[:14] > limite:
+                continue
+            out.append(pr)
+            programas += 1
+            con_datos.add(pr.get("channel"))
 
     # no publicar canales que quedaron sin un solo programa: en el reproductor
     # se ven como "sin informacion" y ensucian la guia
@@ -98,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
