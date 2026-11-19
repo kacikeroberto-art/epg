@@ -1,0 +1,41 @@
+name: Actualizar EPG
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  epg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Guia de pantallazo.cl
+        run: python epg-pantallazo.py --out epg-pantallazo.xml
+
+      - name: Guia de mi.tv
+        run: python epg-mitv.py --out epg-mitv.xml --dias 3
+
+      - name: Generar la guia
+        run: |
+          python epg-merge.py \
+            --ids-file ids.txt \
+            --epg "$(paste -sd, epg-sources.txt),epg-pantallazo.xml,epg-mitv.xml" \
+            --days 3 \
+            --out epg-tv.xml
+
+      - name: Publicar
+        run: |
+          git config user.name "epg-bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add epg-tv.xml epg-tv.xml.gz
+          git commit -m "EPG $(date -u +%Y-%m-%d)" || exit 0
+          git push
