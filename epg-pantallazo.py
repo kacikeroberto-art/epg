@@ -83,6 +83,16 @@ def bajar(url: str) -> str:
     return ""
 
 
+
+def cubre_ahora(raiz):
+    """True si algun programa de la guia incluye el momento actual."""
+    ahora = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+    for p in raiz.findall("programme"):
+        if (p.get("start") or "")[:14] <= ahora < (p.get("stop") or "")[:14]:
+            return True
+    return False
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="epg-pantallazo.xml")
@@ -147,6 +157,11 @@ def main():
     print(f"\ncanales utiles: {utiles} | programas: {total}")
     if genericos:
         print(f"descartados por bloque generico: {', '.join(genericos)}")
+    if not cubre_ahora(tv):
+        print("\nAVISO: la parrilla NO cubre el momento actual "
+              "(pantallazo todavia no cambio de dia).")
+        raise SystemExit(2)
+
     print(f"{args.out}: {Path(args.out).stat().st_size/1024:.0f} KB | "
           f"{gz.name}: {gz.stat().st_size/1024:.0f} KB")
 

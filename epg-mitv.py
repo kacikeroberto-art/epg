@@ -74,7 +74,7 @@ def main():
     hoy = datetime.now()
     desfase = desfase_horas(hoy)
 
-    rutas = [("", hoy), ("manana", hoy + timedelta(days=1))]
+    rutas = [("ayer", hoy - timedelta(days=1)), ("", hoy), ("manana", hoy + timedelta(days=1))]
     for i in range(2, args.dias):
         f = hoy + timedelta(days=i)
         rutas.append((DIAS_ES[f.weekday()], f))
