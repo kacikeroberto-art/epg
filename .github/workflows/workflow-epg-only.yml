@@ -1,8 +1,8 @@
 name: Actualizar EPG
 
 # Publica SOLO la guia. El repositorio no contiene la lista ni URLs de streaming:
-# solo ids de canal (ids.txt), las fuentes publicas de EPG, los dos extractores
-# web (pantallazo.cl y mi.tv) y, si existe, desfases.json.
+# solo ids de canal (ids.txt), las fuentes publicas de EPG, los extractores web
+# (pantallazo.cl, mi.tv, tntsports.cl) y, si existe, desfases.json.
 
 on:
   schedule:
@@ -28,11 +28,14 @@ jobs:
       - name: Guia de mi.tv
         run: python epg-mitv.py --out epg-mitv.xml --dias 3
 
+      - name: Guia oficial de TNT Sports
+        run: python epg-tnt.py --out epg-tnt.xml --dias 4
+
       - name: Generar la guia
         run: |
           python epg-merge.py \
             --ids-file ids.txt \
-            --epg "$(paste -sd, epg-sources.txt),epg-pantallazo.xml,epg-mitv.xml" \
+            --epg "$(paste -sd, epg-sources.txt),epg-pantallazo.xml,epg-mitv.xml,epg-tnt.xml" \
             --days 3 \
             --out epg-tv.xml
 
