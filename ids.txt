@@ -65,7 +65,6 @@ mitv.canal-13
 mitv.canal-13-c
 mitv.canal-de-las-estrellas
 mitv.cartoon-network
-mitv.cdf-premium
 mitv.chilevision
 mitv.comedy-central
 mitv.de-pelicula
@@ -106,3 +105,5 @@ pantallazo.t13-en-vivo
 pantallazo.tv-mas
 pantallazo.tvn-3
 pantallazo.zona-latina
+tnt.CDFB_CL
+tnt.CDFP_CL
