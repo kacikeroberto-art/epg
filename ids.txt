@@ -13,6 +13,7 @@ Canal.HBO.Pop.ar
 Canal.History.(Chile).cl
 Canal.Space.(Chile).cl
 Canal.Sun.Channel.cl
+Canal.TNT.(Chile).cl
 Canal.Telemundo.(Chile).cl
 Canal.¡HOLA!.TV.cl
 E!.Entertainment.TV.co
@@ -89,7 +90,6 @@ mitv.national-geographic
 mitv.tcm
 mitv.telefe-internacional
 mitv.tlnovelas
-mitv.tnt
 mitv.tnt-series
 mitv.tooncast
 mitv.tve
@@ -107,3 +107,4 @@ pantallazo.tvn-3
 pantallazo.zona-latina
 tnt.CDFB_CL
 tnt.CDFP_CL
+tnt.TNTSPO_AR

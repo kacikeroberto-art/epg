@@ -28,6 +28,7 @@ BASE = "https://epg.tapkit.warnermedia.com/cloud-epg-schedule/schedule-sports"
 FEEDS = {
     "CDFB_CL": "TNT Sports",
     "CDFP_CL": "TNT Sports Premium",
+    "TNTSPO_AR": "TNT Sports Argentina",
 }
 
 
